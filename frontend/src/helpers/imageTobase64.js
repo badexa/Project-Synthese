@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import SummaryApi from '../common'
 import Context from '../context'
-import displayINRCurrency from '../helpers/displayCurrency'
+import displayINRCurrency from './displayCurrency'
 import { MdDelete } from "react-icons/md";
 
 const Cart = () => {
