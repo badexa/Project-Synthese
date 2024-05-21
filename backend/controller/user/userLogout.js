@@ -1,21 +1,21 @@
-import { createSlice } from '@reduxjs/toolkit'
+async function userLogout(req,res){
+    try{
+        res.clearCookie("token")
 
-
-const initialState = {
-    user : null
+        res.json({
+            message : "Logged out successfully",
+            error : false,
+            success : true,
+            data : []
+        })
+    }catch(err){
+        res.json({
+            message : err.message || err  ,
+            error : true,
+            success : false,
+        })
+    }
 }
-  
-  export const userSlice = createSlice({
-    name: 'user',
-    initialState,
-    reducers: {
-      setUserDetails : (state,action)=>{
-        state.user = action.payload
-      }
-    },
-  })
-  
-  // Action creators are generated for each case reducer function
-  export const { setUserDetails } = userSlice.actions
-  
-  export default userSlice.reducer
+
+
+module.exports = userLogout
