@@ -3,11 +3,10 @@ import { CgClose } from "react-icons/cg";
 import productCategory from '../helpers/productCategory';
 import { FaCloudUploadAlt } from "react-icons/fa";
 import uploadImage from '../helpers/uploadImage';
-<<<<<<< HEAD
+
 import DisplayImage from './DisplayImage';
-=======
-import DisplayImage from './Displayimage';
->>>>>>> 8c325a094d0a5a2ba6b5e7a2b99996cccdefb8d7
+
+
 import { MdDelete } from "react-icons/md";
 import SummaryApi from '../common';
 import {toast} from 'react-toastify'

@@ -5,11 +5,9 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 import { Link } from 'react-router-dom'
 import addToCart from '../helpers/addToCart'
 import Context from '../context'
-<<<<<<< HEAD
+
 import scrollTop from '../helpers/scrollTop'
-=======
-import scrollTop from '../helpers/srollTop'
->>>>>>> 8c325a094d0a5a2ba6b5e7a2b99996cccdefb8d7
+
 
 const CategroyWiseProductDisplay = ({category, heading}) => {
     const [data,setData] = useState([])

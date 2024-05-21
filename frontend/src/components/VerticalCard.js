@@ -1,9 +1,5 @@
 import React, { useContext } from 'react'
-<<<<<<< HEAD
 import scrollTop from '../helpers/scrollTop'
-=======
-import scrollTop from '../helpers/srollTop
->>>>>>> 8c325a094d0a5a2ba6b5e7a2b99996cccdefb8d7
 import displayINRCurrency from '../helpers/displayCurrency'
 import Context from '../context'
 import addToCart from '../helpers/addToCart'
