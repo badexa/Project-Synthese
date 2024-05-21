@@ -1,4 +1,4 @@
-const userModel = require("../models/userModel")
+const userModel = require("../Models/userModel")
 
 const uploadProductPermission = async(userId) => {
     const user = await userModel.findById(userId)
