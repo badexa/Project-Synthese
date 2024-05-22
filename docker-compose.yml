@@ -32,6 +32,17 @@ services:
       - TOKEN_SECRET_KEY=ffukufjkgfcxxsxtcdcvgeafefaefaefafaefthe
       - FRONTEND_URL=http://localhost:3000
 
+  cart-service:
+    build:
+      context: ./backend/cart-service
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    environment:
+      - MONGODB_URI=mongodb+srv://bader:blehaj123@cluster0.txyjrdn.mongodb.net/projet?retryWrites=true&w=majority&appName=Cluster0
+      - TOKEN_SECRET_KEY=ffukufjkgfcxxsxtcdcvgeafefaefaefafaefthe
+      - FRONTEND_URL=http://localhost:3000
+
   mongo:
     image: mongo:4.4
     ports:
